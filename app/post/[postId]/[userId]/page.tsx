@@ -14,7 +14,7 @@ import { useLikeStore } from "@/app/stores/like";
 import { useCommentStore } from "@/app/stores/comment";
 import useCreateBucketUrl from "@/app/hooks/useCreateBucketUrl";
 
-export default function Post({ params }: PostPageTypes) {
+export default function PostFn({ params }: PostPageTypes) {
   let { postById, postsByUser, setPostById, setPostsByUser } = usePostStore();
   let { setLikesByPost } = useLikeStore();
   let { setCommentsByPost } = useCommentStore();

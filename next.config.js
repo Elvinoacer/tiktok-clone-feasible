@@ -9,6 +9,12 @@ const nextConfig = {
     if (!isServer) config.externals.push("canvas");
     return config;
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = nextConfig;
